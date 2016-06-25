@@ -368,7 +368,7 @@ def  hoteles_mas_comentados():
             resultado += "<li><a href='" + alojamiento.URL + "'>" + alojamiento.nombre + "</a> + Direccion: " + alojamiento.direccion
             if (len(imagen) > 0):
                 resultado += "<img class='imagenes' src='" + imagen[0].URL + "'>"
-            resultado += "<a href='alojamientos/" + str(alojamiento.id) + "'> Mas informacion...</a></li>"
+            resultado += "<a href='alojamientos/" + str(alojamiento.id) + "'> Mas informacion...</br></br></br></a></li>"
             contador += 1
             if(contador == 10):
                 resultado += "</ul>"
