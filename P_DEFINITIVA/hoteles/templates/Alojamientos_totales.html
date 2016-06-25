@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/>
+<meta name="author" content="author"/>
+<link rel="stylesheet" href="template/style.css" type="text/css" media="screen" />
+<title>Madrid Aloha</title>
+<link rel="icon" type="image/png" href="template/img/ComMad.png" />
+<style type="text/css">
+	{{css}}
+</style>
+</head>
+
+<body>
+{{estado}}
+<div class="container">
+
+	<div class="header">
+
+		<div class="title">
+			<big><DIV ALIGN=right>{{form_reg|safe}}</DIV></big>
+		</div>
+
+	</div>
+
+	<div class="navigation">
+			<a href="/">Inicio</a>
+			<a href="/alojamientos">Todos</a>
+			<a href="/about">About</a>
+	</div>
+
+	<div class="main">
+
+		<div class="content">
+			{{form|safe}}
+			{{hoteles|safe}}
+		</div>
+
+		<div class="sidenav">
+			<big>{{datos_usuarios|safe}}</big>
+		</div>
+
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+	<div class="footer">&copy; Esta aplicación utiliza datos del portal de datos abiertos de la ciudad de Madrid</a>
+		<a href="http://bit.ly/1T24Zsq"><br><b> ---> DESCRIPCIÓN (www.esmadrid.com) </b></br></a>
+		<a href="http://www.esmadrid.com/opendata/alojamientos_es.xml">Documento XML</a>
+	</div>
+
+</div>
+
+</body>
+
+</html>
